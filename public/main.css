@@ -12,10 +12,16 @@ a:hover {
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
-.btn-default:focus,
-.btn-default:active {
+.btn-default:focus {
   color: #ffecb3;
   background-color: #795548;
+  border: 1px solid #5f4539;
+}
+
+.btn-default:active,
+.btn-default:active:hover {
+  color: #ffecb3;
+  background-color: #6f4e42;
   border: 1px solid #5f4539;
 }
 
