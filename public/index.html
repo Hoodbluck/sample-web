@@ -12,6 +12,7 @@
     <title>BANANAS!</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://css-spinners.com/css/spinner/spinner.css" type="text/css">
 
     <!-- Custom styles for this template -->
     <link href="main.css" rel="stylesheet">
@@ -53,7 +54,8 @@
             balbisiana</em>.  Orange you glad you chose Bananarama?</p>
           </div>
           <div class="login">
-            <a href="#" class="btn btn-lg btn-default">Log In with Authum</a>
+            <a href="#" class="authum btn btn-lg btn-default">Log In with Authum</a>
+            <div class="spinner-loader"></div>
             <p class="or">or</p>
             <input maxlength="255" id="email" placeholder="Email address" type="email" size="35">
             <div class="separator"></div>
@@ -82,5 +84,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+      $('.authum').click(function() {
+        $('.spinner-loader').toggle();
+      });
+    </script>
   </body>
 </html>
