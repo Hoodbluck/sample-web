@@ -12,13 +12,12 @@ a:hover {
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+.btn-default:focus,
+.btn-default:active {
+  color: #ffecb3;
+  background-color: #795548;
+  border: 1px solid #5f4539;
 }
-
 
 /*
  * Base structure
