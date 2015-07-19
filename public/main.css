@@ -129,6 +129,16 @@ body {
 }
 
 /*
+ * Success
+ */
+
+.success {
+  font-size: 4.5em;
+  font-weight: 100;
+  padding: 124px 0;
+}
+
+/*
  * Login
  */
 
