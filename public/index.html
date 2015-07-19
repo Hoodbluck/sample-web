@@ -53,6 +53,9 @@
             needs&mdash;everything from <em>Musa acuminata</em> to <em>Musa
             balbisiana</em>.  Orange you glad you chose Bananarama?</p>
           </div>
+          <div class="success">
+            <em>Welcome back, Andrew!</em>
+          </div>
           <div class="login">
             <a href="#" class="authum btn btn-lg btn-default">Log In with Authum</a>
             <div class="spinner-loader"></div>
@@ -65,7 +68,6 @@
               <a href="#" class="btn btn-lg btn-default">Log In</a>
             </p>
           </div>
-
           <div class="mastfoot">
             <div class="inner">
               <p>Go bananas or go home.</p>
@@ -85,7 +87,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script>
+      var showSuccessMessage = function() {
+        $('.login').hide();
+        $('.success').show();
+      }
+
       $('.spinner-loader').toggle();
+      $('.success').hide();
 
       $('.authum').click(function() {
         $('.spinner-loader').toggle();
@@ -93,6 +101,7 @@
           url: 'http://authum.hoodbluck.com/client/bananarama/user/3/auth',
           success: function(data, textStatus, jqXHR) {
             console.log('success:' + data);
+            showSuccessMessage();
           },
           error: function(jqXHR, textStatus, errorThrown) {
             console.log('error: ' + textStatus);
