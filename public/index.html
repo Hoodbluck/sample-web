@@ -98,12 +98,13 @@
       $('.authum').click(function() {
         $('.spinner-loader').toggle();
         $.ajax({
-          url: 'http://authum.hoodbluck.com/client/bananarama/user/3/auth',
+          url: 'http://authum.hoodbluck.com/client/bananarama/user/6/auth',
           success: function(data, textStatus, jqXHR) {
             console.log('success:' + data);
             showSuccessMessage();
           },
           error: function(jqXHR, textStatus, errorThrown) {
+            $('.spinner-loader').toggle();
             console.log('error: ' + textStatus);
           }
         });
